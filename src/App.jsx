@@ -1,9 +1,9 @@
 import bg from './assets/bg.jpg'
 import logo from './assets/logo.jpg'
-import { Outlet } from 'react-router-dom'
 import { IoIosHome } from "react-icons/io";
 import { FaCaretDown } from "react-icons/fa";
 import { useState } from 'react';
+import Login from './pages/Login/Login';
 
 function App() {
   const [openLangMenu, setOpenLangMenu] = useState(false)
@@ -50,7 +50,7 @@ function App() {
         </div>
       </nav>
       <div className='pt-24 h-full'>
-        <Outlet />
+        <Login />
       </div>
     </div>
   )
